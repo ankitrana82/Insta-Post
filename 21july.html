@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Post</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black min-h-screen flex items-center justify-center">
+
+  <!-- Outer Container -->
+  <div class="bg-white w-[600px] rounded-xl border border-black">
+    <!-- Inner Container -->
+    <div class="p-6 flex flex-col space-y-6">
+
+      <!-- Profile Row -->
+      <div class="flex items-center justify-between">
+        <!-- Left: Profile -->
+        <div class="flex items-center">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiQr-jR9kghyc32dro92lmsMjBwWtkaN40Mg&s"
+            alt="Profile" class="w-[50px] h-[50px] rounded-full object-cover border border-gray-300 mr-3" />
+          <p class="font-semibold text-gray-800 text-lg">user_name</p>
+        </div>
+
+        <!-- Right: Follow + More Icon -->
+        <div class="flex items-center gap-3">
+          <button id="followBtn"
+            class="border border-blue-600 font-semibold text-blue-600 hover:bg-blue-600 hover:text-white px-4 py-1.5 rounded-lg transition">
+            Follow
+          </button>
+          <span class="text-3xl text-gray-700 cursor-pointer">⋯</span>
+        </div>
+      </div>
+
+      <!-- Post Image -->
+      <div>
+        <img
+          src="https://i.guim.co.uk/img/media/90f3d9d62e357b22062397771403e115ec6e0f53/804_287_2486_1988/master/2486.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=55620d64ae0f9ae6918a3b7528ebf841"
+          alt="Virat Kohli" class="w-full rounded-lg object-cover" />
+      </div>
+
+      <!-- Like & Save Icons -->
+      <div class="flex items-center justify-between">
+        <!-- Left Icons -->
+        <div class="flex gap-5">
+          <img id="likeIcon" src="https://cdn-icons-png.flaticon.com/128/535/535285.png" alt="Like"
+            class="w-[30px] h-[30px] cursor-pointer transition ease-in-out" />
+          <img id="CommentIcon" src="https://cdn-icons-png.flaticon.com/128/5948/5948565.png" alt="Comment"
+            class="w-[30px] h-[30px] cursor-pointer">
+          <img id="ShareIcon" src="https://cdn-icons-png.flaticon.com/128/2550/2550207.png" alt="Share"
+            class="w-[30px] h-[30px] cursor-pointer">
+        </div>
+
+        <!-- Right Save Icon -->
+        <img id="saveIcon" src="https://cdn-icons-png.flaticon.com/128/9511/9511721.png" alt="Save"
+          class="w-[30px] h-[30px] cursor-pointer">
+      </div>
+
+      <!-- Likes and Caption -->
+      <div class="text-2xl text-gray-950 ">
+        <!-- Likes -->
+        <div class="flex items-center">
+          <span>6.7M likes</span>
+        </div>
+
+        <!-- Caption -->
+        <div class="flex flex-wrap items-center gap-1">
+          <span class="font-medium">Virat Kohli </span>
+          <a href="#" class="text-sky-500 hover:underline">#Cricket</a>
+          <a href="#" class="text-sky-500 hover:underline">#King</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/insta.js"></script>
+</body>
+
+</html>
